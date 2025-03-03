@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="product-img" >
+                <img src="432 product-img/image2.png" id="product-images">
+                <div class="btn-div">
+                    <button  class="item1"></button>
+                    <button class="item2"></button>
+                    <button class="item3"></button>
+                </div>
+                
+            </div>
+            <div class="product-content">
+                <h2>Casual T-Shirt</h2>
+                <h5>$10.00</h5>
+                <p class="off">30% OFF</p>
+
+                <p class="dtl">Wrangler is an American manufactures of jeans and other clothing items. Particularly workwear.</p>
+
+                <div class="product-details">                   
+                    <div class="size">
+                        <label class="Lfirst">Size</label>
+                    
+                        <input type="radio" id="size-s" name="size" hidden>
+                        <label for="size-s"><span>S</span></label>
+                    
+                        <input type="radio" id="size-m" name="size" hidden>
+                        <label for="size-m"><span>M</span></label>
+                    
+                        <input type="radio" id="size-l" name="size" hidden>
+                        <label for="size-l"><span>L</span></label>
+                    
+                        <input type="radio" id="size-xl" name="size" hidden>
+                        <label for="size-xl"><span>XL</span></label>
+                    
+                        <input type="radio" id="size-xxl" name="size" hidden>
+                        <label for="size-xxl"><span>XXL</span></label>
+                    </div>                                  
+                        <div class="color">
+                            <label class="Lfirst">Color</label>
+                            
+                            <input type="radio" id="red" name="color" hidden>
+                            <label for="red" class="radio red"></label>
+                        
+                            <input type="radio" id="blue" name="color" hidden>
+                            <label for="blue" class="radio blue"></label>
+                        
+                            <input type="radio" id="green" name="color" hidden>
+                            <label for="green" class="radio green"></label>
+                        
+                            <input type="radio" id="yellow" name="color" hidden>
+                            <label for="yellow" class="radio yellow"></label>
+                        </div>
+                        <div class="select-quantity">
+                            <p>Quantity</p> <input type="number" min="1" max="15">
+                        </div>
+                    
+                </div>
+                <button id="buy-btn">Buy Now</button>
+                
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        const imgEl = document.getElementById("product-images");
+        const btnParent = document.querySelector(".btn-div");
+
+        btnParent.addEventListener("click",(e)=>{
+           let el = e.target
+          console.log(el);
+        if(el.classList.contains("item1")){
+            imgEl.src = "432 product-img/image1.png" 
+
+          }else if(el.classList.contains("item2")){     
+            imgEl.src = "432 product-img/image2.png"
+          }else{
+             imgEl.src = "432 product-img/image3.png"
+          }       
+        });
+       
+        
+
+    </script>
+  
+</body>
+</html>
