@@ -22,3 +22,6 @@ steop-1 : Click on size options to select your preferred size.
 steop-2 : Click on a color option to highlight your choice.
 steop-3 : Adjust the quantity using the input box.
 steop-4 : Click "Buy Now" to proceed .
+
+Happy coding!
+AsTech.
